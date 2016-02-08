@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		A15525FE1C64F7E0002E3CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15525FD1C64F7E0002E3CE9 /* AppDelegate.swift */; };
-		A15526001C64F7E0002E3CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15525FF1C64F7E0002E3CE9 /* ViewController.swift */; };
+		A15526001C64F7E0002E3CE9 /* InterestSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15525FF1C64F7E0002E3CE9 /* InterestSelectionViewController.swift */; };
 		A15526031C64F7E0002E3CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15526011C64F7E0002E3CE9 /* Main.storyboard */; };
 		A15526051C64F7E0002E3CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15526041C64F7E0002E3CE9 /* Assets.xcassets */; };
 		A15526081C64F7E0002E3CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15526061C64F7E0002E3CE9 /* LaunchScreen.storyboard */; };
+		A15526101C64FC27002E3CE9 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155260F1C64FC27002E3CE9 /* Interest.swift */; };
+		A15526121C64FD32002E3CE9 /* InterestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15526111C64FD32002E3CE9 /* InterestService.swift */; };
+		A15526151C64FEAE002E3CE9 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15526131C64FEAE002E3CE9 /* JSON.swift */; };
+		A15526161C64FEAE002E3CE9 /* JSON+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15526141C64FEAE002E3CE9 /* JSON+Extras.swift */; };
+		A15526181C650459002E3CE9 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15526171C650459002E3CE9 /* InterestCollectionViewCell.swift */; };
+		A155261A1C6569A1002E3CE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15526191C6569A1002E3CE9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A15525FA1C64F7E0002E3CE9 /* InterestsCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestsCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15525FD1C64F7E0002E3CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A15525FF1C64F7E0002E3CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A15525FF1C64F7E0002E3CE9 /* InterestSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSelectionViewController.swift; sourceTree = "<group>"; };
 		A15526021C64F7E0002E3CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A15526041C64F7E0002E3CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15526071C64F7E0002E3CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A15526091C64F7E0002E3CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A155260F1C64FC27002E3CE9 /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		A15526111C64FD32002E3CE9 /* InterestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestService.swift; sourceTree = "<group>"; };
+		A15526131C64FEAE002E3CE9 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		A15526141C64FEAE002E3CE9 /* JSON+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Extras.swift"; sourceTree = "<group>"; };
+		A15526171C650459002E3CE9 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		A15526191C6569A1002E3CE9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +67,16 @@
 			isa = PBXGroup;
 			children = (
 				A15525FD1C64F7E0002E3CE9 /* AppDelegate.swift */,
-				A15525FF1C64F7E0002E3CE9 /* ViewController.swift */,
+				A15526111C64FD32002E3CE9 /* InterestService.swift */,
+				A15525FF1C64F7E0002E3CE9 /* InterestSelectionViewController.swift */,
+				A15526171C650459002E3CE9 /* InterestCollectionViewCell.swift */,
+				A155260F1C64FC27002E3CE9 /* Interest.swift */,
+				A15526191C6569A1002E3CE9 /* Extensions.swift */,
 				A15526011C64F7E0002E3CE9 /* Main.storyboard */,
 				A15526041C64F7E0002E3CE9 /* Assets.xcassets */,
 				A15526061C64F7E0002E3CE9 /* LaunchScreen.storyboard */,
+				A15526131C64FEAE002E3CE9 /* JSON.swift */,
+				A15526141C64FEAE002E3CE9 /* JSON+Extras.swift */,
 				A15526091C64F7E0002E3CE9 /* Info.plist */,
 			);
 			path = InterestsCollectionViewDemo;
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15526001C64F7E0002E3CE9 /* ViewController.swift in Sources */,
+				A15526101C64FC27002E3CE9 /* Interest.swift in Sources */,
+				A15526181C650459002E3CE9 /* InterestCollectionViewCell.swift in Sources */,
+				A15526151C64FEAE002E3CE9 /* JSON.swift in Sources */,
+				A155261A1C6569A1002E3CE9 /* Extensions.swift in Sources */,
+				A15526001C64F7E0002E3CE9 /* InterestSelectionViewController.swift in Sources */,
 				A15525FE1C64F7E0002E3CE9 /* AppDelegate.swift in Sources */,
+				A15526161C64FEAE002E3CE9 /* JSON+Extras.swift in Sources */,
+				A15526121C64FD32002E3CE9 /* InterestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
